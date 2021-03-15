@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial News</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+		  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+		}
+
+	    body{
+	    	font-family: 'Roboto', sans-serif;
+	    }	
+    	img{
+    		height: auto;
+    		width: 100%;
+
+    }
+    .new{
+    	font-size: 20px;
+
+    }
+    .des{
+    	font-size: 20px;
+
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="jumbotron" style="color:black">
+
+    <h1 style="color:black">
+
+        Financial News
+    </h1>
+
+</div>
+
+
+<div class="container">
+
+    
+{% for new, des, i in context %}
+
+    <img src="{{i}}" alt="">
+    <h4>Headline: </h4> <div class="new">{{new}}</div>
+    <h4>Description: </h4> <div class="des">{{des}}</div>
+    <br>
+    <br>
+    <hr>
+
+    {% endfor %}
+
+
+
+
+</div>
+
+
+</body>
+</html>
