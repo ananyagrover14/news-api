@@ -1,4 +1,4 @@
-# Weather App
+# News App
 
 ### Heroku App Link
-https://weather-app-1516.herokuapp.com
+https://news-api-wt.herokuapp.com/
